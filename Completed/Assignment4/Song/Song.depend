@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1475471538 source:c:\users\whale\documents\school\code\c++\completedassignments\assignment4\song\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"Song.h"
+
+1476327398 c:\users\whale\documents\school\code\c++\completedassignments\assignment4\song\song.h
+	<iostream>
+
+1475471630 source:c:\users\whale\documents\school\code\c++\completedassignments\assignment4\song\song.cpp
+	"Song.h"
+

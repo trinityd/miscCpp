@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1473644257 source:c:\users\whale\documents\school\code\c++\paycalculator1\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+

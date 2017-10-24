@@ -1,0 +1,8 @@
+FileViewer for CS142 Project 1
+
+Coded by:
+
+Professor Alexis Maciel 
+Kate Isaksen
+Michael Chirgwin
+Friend Trinity Dickinson

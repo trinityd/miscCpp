@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1481215873 source:c:\users\whale\documents\school\code\c++\completed\project2\registrationbook\registrationbook.cpp
+	"RegistrationBook.h"
+	<fstream>
+	<iostream>
+	<map>
+	<string>
+
+1481214708 c:\users\whale\documents\school\code\c++\completed\project2\registrationbook\registrationbook.h
+	<iostream>
+	<string>
+	<map>
+	"RegistrationBookList.h"
+
+1481231391 c:\users\whale\documents\school\code\c++\completed\project2\registrationbook\registrationbooklist.h
+	<fstream>
+	<iostream>
+	<map>
+	<string>
+	"RegistrationBookEntry.h"
+
+1481228320 c:\users\whale\documents\school\code\c++\completed\project2\registrationbook\registrationbookentry.h
+	<fstream>
+	<string>
+	<sstream>
+
+1481231925 source:c:\users\whale\documents\school\code\c++\completed\project2\registrationbook\registrationbooklist.cpp
+	"RegistrationBookList.h"
+	<fstream>
+	<iostream>
+	<map>
+	<string>
+
+1481173766 source:c:\users\whale\documents\school\code\c++\completed\project2\registrationbook\test.cpp
+	"RegistrationBook.h"
+	<string>
+

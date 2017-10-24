@@ -1,0 +1,211 @@
+﻿RegistrationBook
+
+
+
+
+DESIGN
+
+
+
+
+COMPONENT: class RegistrationBook
+
+
+A registration book list viewer.  See program specification for details.
+
+
+Public methods:
+
+
+o RegistrationBook()
+
+
+        Creates an entry list with the associated registrationbook.txt file.
+
+
+o void run()
+
+
+	Runs the registration book.  
+    
+Implementation: First, tests if the file associated with the RegistrationBook can be opened. 
+If it can’t, an error is displayed and the program quits. Next, in a while loop, displays the 
+entry and menu of commands, reads a command and executes it with the execute function.  
+The displaying is delegated to private method display_entry_and_menu.
+
+
+Private methods:
+
+
+o void display_entry and menu() const
+
+
+	Displays the current entry and menu of commands, including an error message (if any) and the 
+	two lines of dashes.  See program specification for details.  
+
+
+Implementation: Holds the entry in a RegistrationBookList object. The displaying of the 
+RegistrationBookList contents and the execution of the commands is delegated to the 
+RegistrationBookList object. The dashes and menu are directly output.
+
+
+o void execute(char command, bool & done)
+
+
+        Using a switch statement, runs the command indicated by the command argument.
+
+
+Collaborator: RegistrationBookList
+
+
+
+
+COMPONENT: class RegistrationBookList
+
+
+A container of RegistrationBookEntry objects.  Holds the entries in a map, and executes 
+commands on this map and the objects themselves. Also displays the current entry. See 
+program specification for details on commands. A map was chosen as the data structure of 
+choice because of its fast searching and insertion algorithms, and automatic ordering. 
+In comparison, if we had chosen to work with a vector, searching and insertion would have 
+been slower and the entries within would not have been automatically ordered.
+
+
+Public methods:
+          
+o RegistrationBookList(const std::string & file_name0);
+
+
+	Calls read_file(file_name0). 
+
+
+o void add(const std::string & name, const std::string & birthyear, const std::string & status)
+
+
+	Creates a new entry using the inputs, inserts it into the map of entries, and sets the 
+	current entry iterator to point to the new entry.
+
+
+o void add(const RegistrationBookEntry & NewEntry)
+
+
+        Inserts the entry into the map of entries and sets the current entry iterator to point to it.
+
+
+o void display_current_entry() const
+
+
+        Displays the current entry to cout.
+
+
+o void edit_current(const std::string & new_name, const std::string & new_birthyear, const std::string & new_status)
+
+
+        Replaces the current entry with a new entry created with the arguments. 
+
+
+o  bool find_player(const std::string & name);
+
+
+        Searches the map of entries for the entry with the key name. If it’s found, it’s set 
+	as the current entry and true is returned. Returns false if not found.
+
+
+o  bool empty() const
+
+
+        Returns true if the map of entries is empty, false otherwise.
+
+
+o  void clear_players()
+        
+        Clears the map of entries, using map.clear().
+
+
+o bool read_file( const std::string & file_name )
+
+
+	First clears the current map of entries, then reads entries in from the associated file. 
+	The first entry is set to the current entry. Returns false if file didn’t open, true otherwise.
+
+
+	Implementation: The season year and number of entries are at the very top of the file, so they
+	are read in first. A loop then uses the input operator of RegistrationBookEntry and the add method 
+	to add entries into the map of entries.
+
+
+o bool write_file( const std::string & file_name ) const
+
+
+        First writes the season year and amount of entries to the file, then writes every entry to the file 
+	using RegistrationBookEntry’s output operator. Returns false if file didn’t open, true otherwise.
+
+
+o bool write_cat(const std::string & category, const std::string & file_name ) const
+
+
+        Runs through the map of entries and checks the category of each. If they match, a counter variable is 
+	increased by one. The amount of entries that fit the category is written to the file, followed by each 
+	entry that fits the category. Returns false otherwise.
+
+
+o const std::string season_year()
+
+
+        Returns the season year.
+
+
+o void set_season_year(std::string season_year0)
+
+
+        Self explanatory.
+
+
+Collaborator: RegistrationBookEntry
+
+
+
+
+
+COMPONENT: class RegistrationBookEntry
+        
+Holds the name, birthyear, category, and status of a player. Can be read into or out of iostreams.
+
+
+Friend methods:
+
+
+o std::istream & operator>>(std::istream & in, RegistrationBookEntry & e)
+
+
+        Assigns the name, birthyear, and status of e by reading them from in. Assigns the category of e using the category method. Returns in.
+
+
+o std::ostream & operator<<(std::ostream & out, const RegistrationBookEntry & e)
+
+
+        Outputs the name, birthyear, category, and status of e, all on separate lines.
+
+
+Public methods:
+
+
+o RegistrationBookEntry()
+
+
+        Sets the name, birthyear, category, status and season year to placeholders.
+
+
+o RegistrationBookEntry(const std::string & name0, const std::string & birthyear0, const std::string & status0, const std::string & season_year0)
+
+
+        Does the same, but sets them to the passed arguments.
+
+
+o std::string category(int season_year, int birthyear)
+
+
+        Returns the category a player belongs in given the season year and the player’s birth year.
+
+
+        Implementation: converts both to numbers, finds the player’s age by subtracting the birth year from the current year. With a series of if statements, determines which category a player of that age should be in.

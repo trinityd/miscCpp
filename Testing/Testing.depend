@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1473181572 source:c:\users\whale\documents\school\code\c++\testing\hello.cpp
+	<iostream>
+
+1473182384 source:c:\users\whale\documents\school\code\c++\testing\main.cpp
+	"greaterthanfive.h"
+
+1473181225 c:\users\whale\documents\school\code\c++\testing\hello.h
+
+1473182384 source:c:\users\whale\documents\school\code\c++\testing\greaterthanfive.cpp
+	<iostream>
+
+1473182384 c:\users\whale\documents\school\code\c++\testing\greaterthanfive.h
+

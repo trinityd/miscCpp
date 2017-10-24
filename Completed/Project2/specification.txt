@@ -1,0 +1,63 @@
+﻿Registration Book
+Version 1.0
+
+SPECIFICATION
+ 
+
+OVERVIEW
+
+A registration book for a soccer club whose entries consist of a name, 
+year of birth, league category, and registration status.  
+The user can erase all players and start a new season, write all players
+ in a category to a file, search for an entry, and add or edit entries. 
+Changes made are saved when the program quits.
+
+
+DETAILS
+
+The Registration Book displays a single entry, which consists of a 
+name, a year of birth, a league category, and a registration status on separate lines.  
+Below the entry, a menu of commands is displayed.  Below that menu, the prompt 
+"command:" is displayed.  The user types the first letter of a 
+command, the command executes and the appropriate entry is 
+displayed.  Some commands prompt the user for more information.  
+
+The entries are displayed in alphabetical order.  No entry is 
+displayed if the Registration book is empty.  
+
+
+SAMPLE INTERFACE  
+
+John Smith
+2000
+U17
+paid
+--------------------------------------------------
+ new_season   search   edit     
+ quit                  add       delete  
+-------
+command: e
+new name: 
+
+
+
+
+
+COMMANDS
+
+new_season: Asks for a new season year. Asks whether or not to 
+delete current players from the file, and does so.
+
+search: Asks for a name and displays the corresponding entry.  
+If not found, the earlier entry is redisplayed.
+
+add: Asks for a new name, year of birth, and registration status, and adds a new 
+entry to the registration book and displays the new entry.
+
+edit: Asks for a new name, year of birth, and registration status and edits the 
+current entry, recalculating the category if necessary. Does nothing if 
+the Registration book is empty.  
+
+category: Asks for a category and file name, and writes all players in that category to the file.
+
+quit: Saves the registration book to a file and halts the program.

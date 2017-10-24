@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1475472586 source:c:\users\whale\documents\school\code\c++\completedassignments\assignment4\time\time.cpp
+	"Time.h"
+
+1475472931 c:\users\whale\documents\school\code\c++\completedassignments\assignment4\time\time.h
+	<iostream>
+
+1475473096 source:c:\users\whale\documents\school\code\c++\completedassignments\assignment4\time\main.cpp
+	<fstream>
+	<iomanip>
+	<iostream>
+	<string>
+	"Time.h"
+

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1481052653 source:c:\users\whale\documents\school\code\c++\completed\assignment10\test_queue.cpp
+	<iostream>
+	<string>
+	"Queue.h"
+
+1481052887 c:\users\whale\documents\school\code\c++\completed\assignment10\queue.h
+

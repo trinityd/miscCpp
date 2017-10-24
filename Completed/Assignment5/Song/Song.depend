@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1475471538 source:c:\users\whale\documents\school\code\c++\completedassignments\assignment4\song\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"Song.h"
+
+1476327398 c:\users\whale\documents\school\code\c++\completedassignments\assignment4\song\song.h
+	<iostream>
+
+1475471630 source:c:\users\whale\documents\school\code\c++\completedassignments\assignment4\song\song.cpp
+	"Song.h"
+
+1475471630 source:c:\users\whale\documents\school\code\c++\completedassignments\assignment5\song\song.cpp
+	"Song.h"
+
+1476667021 c:\users\whale\documents\school\code\c++\completedassignments\assignment5\song\song.h
+	<iostream>
+	"run_song.h"
+
+1476665056 c:\users\whale\documents\school\code\c++\completedassignments\assignment5\song\run_song.h
+	<string>
+
+1476665226 source:c:\users\whale\documents\school\code\c++\completedassignments\assignment5\song\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"Song.h"
+
+1476667606 source:c:\users\whale\documents\school\code\c++\completedassignments\assignment5\song\run_song.cpp
+	"run_song.h"
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+	"Song.h"
+

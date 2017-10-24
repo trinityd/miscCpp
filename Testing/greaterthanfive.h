@@ -1,0 +1,6 @@
+#ifndef GREATERTHANFIVE_H_INCLUDED
+#define GREATERTHANFIVE_H_INCLUDED
+
+void greaterthanfive();
+
+#endif // GREATERTHANFIVE_H_INCLUDED

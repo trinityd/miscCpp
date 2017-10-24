@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1478243066 source:c:\users\whale\documents\school\code\c++\completed\project1\fileviewer\buffer.cpp
+	"Buffer.h"
+	<fstream>
+	<iomanip>
+	<iostream>
+	<string>
+	<vector>
+	<sstream>
+	<algorithm>
+
+1478243066 c:\users\whale\documents\school\code\c++\completed\project1\fileviewer\buffer.h
+	<vector>
+	<string>
+
+1478122866 source:c:\users\whale\documents\school\code\c++\completed\project1\fileviewer\fileviewer.cpp
+	"FileViewer.h"
+	<iostream>
+	<string>
+
+1478056533 c:\users\whale\documents\school\code\c++\completed\project1\fileviewer\fileviewer.h
+	<string>
+	"Buffer.h"
+
+1477948246 source:c:\users\whale\documents\school\code\c++\completed\project1\fileviewer\test.cpp
+	"FileViewer.h"
+
