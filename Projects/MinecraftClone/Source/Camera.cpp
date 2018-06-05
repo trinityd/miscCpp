@@ -1,11 +1,23 @@
 #include "Camera.h"
 
 #include <cmath>
+#include <iostream>
 
 #include <SFML/Window/Keyboard.hpp>
 #include <SFML/Window/Mouse.hpp>
 
 #include "Display.h"
+
+#include "Math/Matrix_Math.h"
+
+Camera::Camera()
+: m_projectionMatrix(Math::createProjMatrix())
+{}
+
+void Camera::update()
+{
+    m_viewMatrix = Math::createViewMatrix(*this);
+}
 
 void Camera::input(float dt)
 {
@@ -53,12 +65,12 @@ void Camera::input(float dt)
 
 void Camera::mouseInput()
 {
-    static sf::Vector2i lastMousePosition;
+    static sf::Vector2i lastMousePosition = sf::Mouse::getPosition();
 
     auto mouseChange = sf::Mouse::getPosition() - lastMousePosition;
 
-    rotation.y += mouseChange.x;
-    rotation.x += mouseChange.y;
+    rotation.y += mouseChange.x * 0.5;
+    rotation.x += mouseChange.y * 0.5;
 
     if(rotation.x > 90)
     {
@@ -85,3 +97,15 @@ void Camera::mouseInput()
 
     lastMousePosition = sf::Mouse::getPosition();
 }
+
+const Matrix4& Camera::getViewMatrix() const
+{
+    return m_viewMatrix;
+}
+
+const Matrix4& Camera::getProjMatrix() const
+{
+    return m_projectionMatrix;
+}
+
+

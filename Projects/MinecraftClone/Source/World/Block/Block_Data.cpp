@@ -12,7 +12,7 @@ namespace Block
 
         std::string title;
 
-        while(std::getLine(inFile, title))
+        while(std::getline(inFile, title))
         {
             if(title == "") continue;
             else if(title == "Name")

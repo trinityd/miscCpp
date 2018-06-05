@@ -437,21 +437,23 @@
 1528144926 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\states\game_state.cpp
 	"Game_State.h"
 
-1528172858 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\application.cpp
+1528187514 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\application.cpp
 	"Application.h"
 	"Display.h"
-	"States/Playing.h"
+	"States/SPlaying.h"
 
-1528171369 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\application.h
+1528186325 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\application.h
 	<stack>
 	<memory>
 	"States/Game_State.h"
-	"Renderer/Master.h"
+	"Renderer/RMaster.h"
 	"Camera.h"
 
-1528145767 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\main.cpp
+1528186857 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\main.cpp
 	"Display.h"
 	"Application.h"
+	"Util/Random.h"
+	<iostream>
 
 1528178752 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\model.h
 	<vector>
@@ -482,9 +484,9 @@
 1528164142 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\shaders\simple_shader.h
 	"Shader_Program.h"
 
-1528169200 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\shaders\simple_shader.cpp
+1528187460 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\shaders\simple_shader.cpp
 	"Simple_Shader.h"
-	"../Math/Matrix.h"
+	"../Math/Matrix_Math.h"
 
 1528153337 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\textures\texture.h
 	<GL/glew.h>
@@ -541,15 +543,18 @@
 1528171577 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\math\matrix.h
 	"../Glm_Common.h"
 
-1528173567 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\camera.h
+1528187337 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\camera.h
+	"Glm_Common.h"
 	"Entity.h"
 
-1528174883 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\camera.cpp
+1528187571 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\camera.cpp
 	"Camera.h"
 	<cmath>
+	<iostream>
 	<SFML/Window/Keyboard.hpp>
 	<SFML/Window/Mouse.hpp>
 	"Display.h"
+	"Math/Matrix_Math.h"
 
 1528177705 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\textures\texture_atlas.h
 	"Texture.h"
@@ -558,4 +563,102 @@
 
 1528179396 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\textures\texture_atlas.cpp
 	"Texture_Atlas.h"
+
+1528188171 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\block\block_types\block_type.cpp
+	"Block_Type.h"
+
+1528188148 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\block\block_types\block_type.h
+	<string>
+	"../Block_Data.h"
+
+1528182830 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\block\block_data.h
+	<string>
+	"Block_ID.h"
+	"../../Glm_Common.h"
+
+1528181594 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\block\block_id.h
+
+1528184547 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\math\matrix_math.cpp
+	"Matrix_Math.h"
+	"../Entity.h"
+	"../Camera.h"
+	"../Display.h"
+
+1528171577 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\math\matrix_math.h
+	"../Glm_Common.h"
+
+1528184563 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\renderer\rmaster.cpp
+	"RMaster.h"
+	"../Display.h"
+
+1528184567 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\renderer\rmaster.h
+	"RSimple.h"
+
+1528171519 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\renderer\rsimple.h
+	<vector>
+	<SFML/System/Clock.hpp>
+	"../Shaders/Simple_Shader.h"
+
+1528184579 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\block\block_types\bair.cpp
+	"BAir.h"
+
+1528181513 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\block\block_types\bair.h
+	"Block_Type.h"
+
+1528184583 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\block\block_types\bgrass.cpp
+	"BGrass.h"
+
+1528181968 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\block\block_types\bgrass.h
+	"Block_Type.h"
+
+1528185555 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\block\block_database.cpp
+	"Block_Database.h"
+	"Block_Types/BAir.h"
+	"Block_Types/BGrass.h"
+	"Block_ID.h"
+
+1528185508 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\block\block_database.h
+	<vector>
+	<memory>
+	"Block_Types/Block_Type.h"
+	"Block_ID.h"
+
+1528187477 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\renderer\rsimple.cpp
+	"RSimple.h"
+	"../Temp/Quad.h"
+	"../Math/Matrix_Math.h"
+	"../Camera.h"
+
+1528184599 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\states\splaying.cpp
+	"SPlaying.h"
+	<SFML/System/Clock.hpp>
+	"../Renderer/RMaster.h"
+	"../Camera.h"
+
+1528179195 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\states\splaying.h
+	"Game_State.h"
+	"../Model.h"
+	"../Shaders/Simple_Shader.h"
+	"../Textures/Texture_Atlas.h"
+	"../Temp/Quad.h"
+
+1528184613 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\block\block_data.cpp
+	"Block_Data.h"
+	<fstream>
+
+1528186693 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\util\random.h
+	<random>
+	<cstdint>
+	<ctime>
+
+1528186349 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\util\random.cpp
+	"Random.h"
+	<ctime>
+
+1528187867 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\chunk\chunk_block.cpp
+	"Chunk_Block.h"
+
+1528187929 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\chunk\chunk_block.h
+	<cstdint>
+	"../Block/Block_ID.h"
 

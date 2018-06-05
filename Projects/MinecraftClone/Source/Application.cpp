@@ -1,6 +1,6 @@
 #include "Application.h"
 #include "Display.h"
-#include "States/Playing.h"
+#include "States/SPlaying.h"
 
 Application::Application()
 {
@@ -17,6 +17,9 @@ void Application::runMainGameLoop()
         m_renderer.clear();
 
         m_states.top()->input(camera);
+
+        camera.update();
+
         m_states.top()->update(camera, dt);
         m_states.top()->draw(m_renderer);
 
