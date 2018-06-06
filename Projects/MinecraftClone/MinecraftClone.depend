@@ -2,13 +2,13 @@
 1528143798 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\main.cpp
 	"Source/Display.h"
 
-1528175532 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\display.cpp
+1528206593 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\display.cpp
 	"Display.h"
 	<memory>
 	<SFML/Graphics.hpp>
 	<GL/glew.h>
 
-1528174775 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\display.h
+1528206593 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\display.h
 
 1528136268 c:\users\trinity\documents\code\c++\libraries\sfml-2.5.0\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -432,30 +432,30 @@
 	"../Textures/Texture_Atlas.h"
 	"../Temp/Quad.h"
 
-1528172888 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\states\game_state.h
+1528206593 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\states\game_state.h
 
 1528144926 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\states\game_state.cpp
 	"Game_State.h"
 
-1528187514 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\application.cpp
+1528206593 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\application.cpp
 	"Application.h"
 	"Display.h"
 	"States/SPlaying.h"
 
-1528186325 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\application.h
+1528204722 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\application.h
 	<stack>
 	<memory>
 	"States/Game_State.h"
 	"Renderer/RMaster.h"
 	"Camera.h"
 
-1528186857 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\main.cpp
+1528206593 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\main.cpp
 	"Display.h"
 	"Application.h"
 	"Util/Random.h"
 	<iostream>
 
-1528178752 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\model.h
+1528206593 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\model.h
 	<vector>
 	<GL/glew.h>
 
@@ -481,10 +481,10 @@
 	<sstream>
 	<stdexcept>
 
-1528164142 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\shaders\simple_shader.h
+1528251927 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\shaders\simple_shader.h
 	"Shader_Program.h"
 
-1528187460 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\shaders\simple_shader.cpp
+1528251969 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\shaders\simple_shader.cpp
 	"Simple_Shader.h"
 	"../Math/Matrix_Math.h"
 
@@ -547,7 +547,7 @@
 	"Glm_Common.h"
 	"Entity.h"
 
-1528187571 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\camera.cpp
+1528206593 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\camera.cpp
 	"Camera.h"
 	<cmath>
 	<iostream>
@@ -578,7 +578,7 @@
 
 1528181594 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\block\block_id.h
 
-1528184547 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\math\matrix_math.cpp
+1528206593 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\math\matrix_math.cpp
 	"Matrix_Math.h"
 	"../Entity.h"
 	"../Camera.h"
@@ -587,11 +587,11 @@
 1528171577 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\math\matrix_math.h
 	"../Glm_Common.h"
 
-1528184563 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\renderer\rmaster.cpp
+1528251030 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\renderer\rmaster.cpp
 	"RMaster.h"
 	"../Display.h"
 
-1528184567 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\renderer\rmaster.h
+1528251030 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\renderer\rmaster.h
 	"RSimple.h"
 
 1528171519 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\renderer\rsimple.h
@@ -617,7 +617,7 @@
 	"Block_Types/BGrass.h"
 	"Block_ID.h"
 
-1528185508 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\block\block_database.h
+1528206593 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\block\block_database.h
 	<vector>
 	<memory>
 	"Block_Types/Block_Type.h"
@@ -629,13 +629,13 @@
 	"../Math/Matrix_Math.h"
 	"../Camera.h"
 
-1528184599 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\states\splaying.cpp
+1528251030 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\states\splaying.cpp
 	"SPlaying.h"
 	<SFML/System/Clock.hpp>
 	"../Renderer/RMaster.h"
 	"../Camera.h"
 
-1528179195 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\states\splaying.h
+1528251030 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\states\splaying.h
 	"Game_State.h"
 	"../Model.h"
 	"../Shaders/Simple_Shader.h"
@@ -655,10 +655,29 @@
 	"Random.h"
 	<ctime>
 
-1528187867 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\chunk\chunk_block.cpp
+1528204137 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\chunk\chunk_block.cpp
 	"Chunk_Block.h"
+	"../Block/Block_Database.h"
 
-1528187929 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\chunk\chunk_block.h
+1528251030 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\chunk\chunk_block.h
 	<cstdint>
 	"../Block/Block_ID.h"
+	"../Block/Block_Data.h"
+	"../Block/Block_Types/Block_Type.h"
+
+1528193223 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\shaders\chunk_shader.cpp
+	"Chunk_Shader.h"
+
+1528194520 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\shaders\chunk_shader.h
+	"Simple_Shader.h"
+
+1528248800 source:c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\chunk\chunk_section.cpp
+	"Chunk_Section.h"
+
+1528248789 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\chunk\chunk_section.h
+	<array>
+	"Chunk_Block.h"
+	"../World_Constants.h"
+
+1528188895 c:\users\trinity\documents\code\c++\projects\minecraftclone\source\world\world_constants.h
 
